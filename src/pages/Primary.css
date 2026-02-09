@@ -9,8 +9,8 @@
     justify-content: center;
     background-size: cover;
     background-position: center;
-    color: #ffffff !important;
-    /* Force white color */
+    color: #000000 !important;
+    /* Changed to black */
     text-align: center;
     margin-top: -80px;
     /* Offset for transparent header */
@@ -35,20 +35,20 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 1rem;
-    color: white;
-    /* Changed to white */
+    color: #000000;
+    /* Changed to black */
 }
 
 .falcon-hero h1 span.text-secondary {
-    color: white !important;
+    color: #000000 !important;
 }
 
 .hero-lead {
     font-size: 1.5rem;
     max-width: 800px;
     margin: 0 auto 3rem;
-    color: white;
-    /* Ensure it's fully white */
+    color: #000000;
+    /* Ensure it's black */
     opacity: 1;
     /* Full opacity */
 }
@@ -80,8 +80,8 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    color: var(--color-brand-primary);
-    /* Darker for visibility */
+    color: #000000;
+    /* Changed to black */
     font-weight: 700;
 }
 
@@ -242,19 +242,32 @@
     filter: brightness(1.1);
 }
 
+.bg-primary {
+    background-color: var(--color-primary-light);
+    color: var(--color-brand-primary) !important;
+}
+
 .bg-secondary {
     background-color: var(--color-brand-secondary);
     color: var(--color-brand-primary) !important;
 }
 
-.bg-secondary h3,
-.bg-secondary p,
-.bg-secondary .cta-action {
-    color: var(--color-brand-primary);
+.bg-accent {
+    background-color: #e0f2fe;
+    /* Very light blue */
+    color: var(--color-brand-primary) !important;
 }
 
-.bg-accent {
-    background-color: #0088cc;
+.bg-primary h3,
+.bg-primary p,
+.bg-primary .cta-action,
+.bg-secondary h3,
+.bg-secondary p,
+.bg-secondary .cta-action,
+.bg-accent h3,
+.bg-accent p,
+.bg-accent .cta-action {
+    color: var(--color-brand-primary) !important;
 }
 
 .cta-item h3 {
