@@ -4,14 +4,14 @@ import './OurStaff.css';
 
 const staffMembers = [
     {
-        name: 'Dr. T. Masundulwane',
+        name: 'Mr. J Nkomo',
         role: 'Director',
         description: 'Visionary leader dedicated to providing holistic education and nurturing future leaders.',
         icon: <Star size={40} />,
         image: null // I will use icons if no images are provided
     },
     {
-        name: 'Pastor J. Moyo',
+        name: 'Pastor G. Gumpo',
         role: 'Chaplain',
         description: 'Guiding the spiritual growth and moral development of our students and staff.',
         icon: <Heart size={40} />,
