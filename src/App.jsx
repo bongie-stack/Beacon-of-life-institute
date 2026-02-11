@@ -11,9 +11,12 @@ import Requirements from './pages/Requirements'
 import Activities from './pages/Activities'
 
 
+import ScrollToTop from './components/ScrollToTop'
+
 function App() {
     return (
         <div className="app-container" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+            <ScrollToTop />
             <Header />
             <main style={{ flex: 1 }}>
                 <Routes>
