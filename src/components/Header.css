@@ -50,11 +50,11 @@
 
 .header-transparent .logo,
 .header-transparent .nav-links a:not(.btn-sm) {
-    color: var(--color-brand-primary);
+    color: white;
 }
 
 .header-transparent .mobile-menu-btn {
-    color: var(--color-brand-primary);
+    color: white;
 }
 
 .header-solid .logo,

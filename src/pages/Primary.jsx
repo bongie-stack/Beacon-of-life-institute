@@ -5,9 +5,11 @@ import Slideshow from '../components/Slideshow';
 import './Primary.css';
 
 // Importing assets
-import heroScience from '../assets/science-class.jpg';
+import heroScience from '../assets/main-cover.jpeg';
+import academicImg from '../assets/academic.jpg';
 import campusImg from '../assets/enrollment-poster.jpg';
 import campusLife3 from '../assets/hero_3.jpg';
+import culturalImg from '../assets/cultural.jpeg';
 
 export default function Primary() {
     return (
@@ -68,7 +70,7 @@ export default function Primary() {
 
                     <div className="pillars-grid">
                         <div className="pillar-card">
-                            <div className="pillar-image" style={{ backgroundImage: `url(${heroScience})` }}></div>
+                            <div className="pillar-image" style={{ backgroundImage: `url(${academicImg})` }}></div>
                             <div className="pillar-content">
                                 <BookOpen className="pillar-icon" />
                                 <h3>Academic</h3>
@@ -88,7 +90,7 @@ export default function Primary() {
                         </div>
 
                         <div className="pillar-card">
-                            <div className="pillar-image" style={{ backgroundImage: `url(${campusLife3})` }}></div>
+                            <div className="pillar-image" style={{ backgroundImage: `url(${culturalImg})` }}></div>
                             <div className="pillar-content">
                                 <Palette className="pillar-icon" />
                                 <h3>Cultural</h3>

@@ -9,8 +9,8 @@
     justify-content: center;
     background-size: cover;
     background-position: center;
-    color: #000000 !important;
-    /* Changed to black */
+    color: #ffffff !important;
+    /* Changed to white */
     text-align: center;
     margin-top: -80px;
     /* Offset for transparent header */
@@ -35,20 +35,20 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 1rem;
-    color: #000000;
-    /* Changed to black */
+    color: #ffffff;
+    /* Changed to white */
 }
 
 .falcon-hero h1 span.text-secondary {
-    color: #000000 !important;
+    color: #ffffff !important;
 }
 
 .hero-lead {
     font-size: 1.5rem;
     max-width: 800px;
     margin: 0 auto 3rem;
-    color: #000000;
-    /* Ensure it's black */
+    color: #ffffff;
+    /* Ensure it's white */
     opacity: 1;
     /* Full opacity */
 }
@@ -80,8 +80,8 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    color: #000000;
-    /* Changed to black */
+    color: #ffffff;
+    /* Changed to white */
     font-weight: 700;
 }
 
@@ -319,16 +319,43 @@
 }
 
 @media (max-width: 768px) {
+    .falcon-hero {
+        min-height: 100vh;
+        height: auto;
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+        background-attachment: scroll;
+        /* Better for mobile performance */
+        background-position: center;
+    }
+
     .falcon-hero h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        /* Slightly smaller to prevent overflow */
+        margin-bottom: 1rem;
+    }
+
+    .hero-tag {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
     }
 
     .hero-lead {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
     }
 
     .hero-btns {
         flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
+    .btn-lg {
+        width: 100%;
     }
 
     .intro-stats {
