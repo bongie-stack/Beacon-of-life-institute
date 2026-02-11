@@ -186,9 +186,9 @@ button {
 .animate-on-scroll {
   opacity: 0;
   will-change: transform, opacity;
-  animation-duration: 0.8s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+  animation-timing-function: cubic-bezier(0.8, 3.2, 0.8, 4);
 }
 
 .animate-on-scroll.is-visible {
