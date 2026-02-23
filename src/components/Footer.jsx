@@ -11,8 +11,8 @@ export default function Footer() {
                     <h3 className="footer-logo">Beacon of Life <span className="text-highlight">Institute</span></h3>
                     <p className="footer-desc">Nurturing minds, building futures. A Christian-based education center committed to excellence.</p>
                     <div className="social-links">
-                        <a href="#" className="social-icon"><Facebook size={20} /></a>
-                        <a href="#" className="social-icon"><Instagram size={20} /></a>
+                        <a href="https://www.facebook.com/profile.php?id=61554904583865" className="social-icon" target="_blank" rel="noopener noreferrer"><Facebook size={20} /></a>
+                        <a href="https://www.instagram.com/beaconoflifeinstitute/" className="social-icon" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
                     </div>
                 </div>
 

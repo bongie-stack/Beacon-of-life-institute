@@ -11,6 +11,7 @@ import academicImg from '../assets/academic.jpg';
 import campusImg from '../assets/enrollment-poster.jpg';
 import campusLife3 from '../assets/hero_3.jpg';
 import culturalImg from '../assets/cultural.jpeg';
+import premisesImg from '../assets/beac.jpg';
 
 export default function Primary() {
     useScrollAnimation();
@@ -39,8 +40,8 @@ export default function Primary() {
             <div className="falcon-hero" style={{ backgroundImage: `url(${heroScience})` }}>
                 <div className="hero-overlay"></div>
                 <div className="container hero-content">
-                    <span className="hero-tag animate-on-scroll fade-in-up">Excellence in Education</span>
-                    <h1 className="animate-on-scroll fade-in-up delay-100">Nurturing <span className="text-secondary">Future Leaders</span></h1>
+                    <span className="hero-tag animate-on-scroll fade-in-up">Excellence from ECD to Grade 7</span>
+                    <h1 className="animate-on-scroll fade-in-up delay-100">Beacon of Life <br /><span className="text-secondary">ECD Centre & Junior School</span></h1>
                     <p className="hero-lead animate-on-scroll fade-in-up delay-200">A holistic approach to 21st-century learning, grounded in values and driven by innovation.</p>
                     <div className="hero-btns animate-on-scroll fade-in-up delay-300">
                         <Link to="/admissions" className="btn btn-primary btn-lg">Admissions</Link>
@@ -60,7 +61,10 @@ export default function Primary() {
                         <div className="intro-text animate-on-scroll slide-in-left">
                             <h2 className="section-title">The <span className="text-primary">Beacon</span> Experience</h2>
                             <p className="lead-text">At Beacon of Life Institute, we believe in educating the whole child. Our environment is designed to foster intellectual curiosity, physical well-being, and cultural appreciation.</p>
-                            <p>Located in the heart of Bulawayo, we provide a safe, nurturing, and challenging atmosphere where students from all backgrounds can thrive and prepare for a global future.</p>
+                            <p>Located in the heart of Bulawayo, our ECD Centre and Junior School provide a safe, nurturing, and challenging atmosphere where students from all backgrounds can thrive.</p>
+                            <div className="transition-note box-highlight">
+                                <p><strong>Pathway to Secondary School:</strong> Our Grade 7 graduates enjoy a seamless transition into Form 1 at our Secondary School with <span className="text-highlight">exclusive discounted fees</span>.</p>
+                            </div>
                             <Link to="/our-staff" className="btn btn-link">Meet Our Educators <ArrowRight size={16} /></Link>
                         </div>
                         <div className="intro-stats animate-on-scroll slide-in-right delay-200">
@@ -76,6 +80,21 @@ export default function Primary() {
                                 <span className="stat-number">10+</span>
                                 <span className="stat-label">Sports & Clubs</span>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Premises Section */}
+            <section className="premises-section section-padding bg-light">
+                <div className="container">
+                    <div className="premises-content">
+                        <div className="premises-text animate-on-scroll slide-in-left">
+                            <h2 className="section-title">Our Modern <span className="text-primary">Premises</span></h2>
+                            <p>Our campus is designed to provide a stimulating environment for both ECD and Junior School learners. With spacious classrooms, secure play areas, and modern facilities, we ensure every child has the best setting for their educational journey.</p>
+                        </div>
+                        <div className="premises-image animate-on-scroll slide-in-right">
+                            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=2064&auto=format&fit=crop" alt="Beacon of Life Premises" className="img-fluid rounded shadow-lg" />
                         </div>
                     </div>
                 </div>
@@ -121,10 +140,10 @@ export default function Primary() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Campus Life Slideshow */}
-            <section className="slideshow-section section-padding">
+            < section className="slideshow-section section-padding" >
                 <div className="container">
                     <div className="section-header text-center animate-on-scroll fade-in">
                         <h2 className="section-title">Life at Beacon</h2>
@@ -132,10 +151,10 @@ export default function Primary() {
                     </div>
                 </div>
                 <Slideshow />
-            </section>
+            </section >
 
             {/* Quick Links / Call to Action */}
-            <section className="cta-section">
+            < section className="cta-section" >
                 <div className="cta-grid">
                     <Link to="/admissions" className="cta-item bg-primary animate-on-scroll zoom-in delay-100">
                         <GraduationCap size={40} />
@@ -156,12 +175,13 @@ export default function Primary() {
                         <span className="cta-action">Contact Us <ArrowRight size={16} /></span>
                     </Link>
                 </div>
-            </section>
+            </section >
 
             {/* Back to Top Button */}
-            <div className={`scroll-to-top ${showScroll ? 'visible' : ''}`} onClick={scrollTop}>
+            < div className={`scroll-to-top ${showScroll ? 'visible' : ''}`
+            } onClick={scrollTop} >
                 <ArrowUp size={24} />
-            </div>
-        </div>
+            </div >
+        </div >
     );
 }

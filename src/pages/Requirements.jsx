@@ -22,7 +22,7 @@ export default function Requirements() {
                             <h3>Official Documents</h3>
                             <ul className="req-list">
                                 <li>Birth Certificate (Original & Copy)</li>
-                                <li>Grade 7 Certificate / Latest School Report</li>
+                                <li>Latest School Report from previous grade</li>
                                 <li>Transfer Letter from previous school</li>
                                 <li>Completed Registration Form</li>
                             </ul>

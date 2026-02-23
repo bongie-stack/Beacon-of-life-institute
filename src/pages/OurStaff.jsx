@@ -4,7 +4,7 @@ import './OurStaff.css';
 
 const staffMembers = [
     {
-        name: 'Mr. J Nkomo',
+        name: 'Pastor Sabelo Dube',
         role: 'Director',
         description: 'Visionary leader dedicated to providing holistic education and nurturing future leaders.',
         icon: <Star size={40} />,
