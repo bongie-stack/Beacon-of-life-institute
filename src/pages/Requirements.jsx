@@ -59,7 +59,7 @@ export default function Requirements() {
                             <h2>Important: Entrance Assessment</h2>
                             <p>All new students are required to undergo a basic assessment to help us understand their learning needs and ensure proper placement.</p>
                         </div>
-                        <a href="https://wa.me/263786757073" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Assessment</a>
+                        <a href="https://wa.me/263783762621" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Assessment</a>
                     </div>
                 </div>
             </section>

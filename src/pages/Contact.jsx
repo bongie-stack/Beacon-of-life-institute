@@ -10,7 +10,7 @@ export default function Contact() {
                     <MapPin size={24} color="#002147" />
                     <div>
                         <h3>Address</h3>
-                        <p>29 Fort Street, Bulawayo</p>
+                        <p>No. 9 Fort Street Bulawayo</p>
                     </div>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>

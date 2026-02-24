@@ -21,7 +21,7 @@ export default function Footer() {
                     <ul className="contact-list">
                         <li>
                             <MapPin size={18} className="contact-icon" />
-                            <span>29 Fort Street, Bulawayo</span>
+                            <span>No. 9 Fort Street Bulawayo</span>
                         </li>
                         <li>
                             <Phone size={18} className="contact-icon" />

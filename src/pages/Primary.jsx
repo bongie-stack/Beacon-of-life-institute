@@ -63,6 +63,7 @@ export default function Primary() {
                             <p className="lead-text">At Beacon of Life Institute, we believe in educating the whole child. Our environment is designed to foster intellectual curiosity, physical well-being, and cultural appreciation.</p>
                             <p>Located in the heart of Bulawayo, our ECD Centre and Junior School provide a safe, nurturing, and challenging atmosphere where students from all backgrounds can thrive.</p>
                             <div className="transition-note box-highlight">
+                                <p><strong>Early Learning Transition:</strong> Our learners enjoy a seamless transition from <span className="text-highlight">ECD B to Grade 1</span>, ensuring continuity in their academic foundation.</p>
                                 <p><strong>Pathway to Secondary School:</strong> Our Grade 7 graduates enjoy a seamless transition into Form 1 at our Secondary School with <span className="text-highlight">exclusive discounted fees</span>.</p>
                             </div>
                             <Link to="/our-staff" className="btn btn-link">Meet Our Educators <ArrowRight size={16} /></Link>

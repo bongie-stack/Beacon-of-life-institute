@@ -24,7 +24,7 @@ export default function Header() {
                     <Link to="/activities" onClick={() => setIsOpen(false)}>Activities</Link>
                     <Link to="/our-staff" onClick={() => setIsOpen(false)}>Our Staff</Link>
                     <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
-                    <a href="https://wa.me/263786757073?text=Hello%20Beacon%20of%20Life%20Institute,%20I%20would%20like%20to%20apply%20for%20admission." target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-apply" onClick={() => setIsOpen(false)}>Apply Now</a>
+                    <a href="https://wa.me/263783762621?text=Hello%20Beacon%20of%20Life%20Institute,%20I%20would%20like%20to%20apply%20for%20admission." target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-apply" onClick={() => setIsOpen(false)}>Apply Now</a>
                 </nav>
 
                 <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
