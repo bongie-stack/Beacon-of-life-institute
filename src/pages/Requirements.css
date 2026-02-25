@@ -6,7 +6,7 @@
     background: linear-gradient(rgba(0, 33, 71, 0.85), rgba(0, 33, 71, 0.95)), url('../assets/hero_3.jpg');
     background-size: cover;
     background-position: center;
-    padding: 6rem 0 4rem;
+    padding: 10rem 0 4rem;
     color: white;
     text-align: center;
 }

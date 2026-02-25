@@ -14,6 +14,7 @@
     text-align: center;
     margin-top: -80px;
     /* Offset for transparent header */
+    padding-top: 150px;
 }
 
 .falcon-hero .hero-overlay {
@@ -35,6 +36,7 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 1rem;
+    margin-top: 2rem;
     color: #ffffff;
     /* Changed to white */
 }
@@ -172,11 +174,27 @@
 
 .pillar-image {
     height: 250px;
-    background-size: cover;
-    background-position: center;
     position: relative;
+    overflow: hidden;
 }
 
+.pillar-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.pillar-slide.active {
+    opacity: 1;
+}
+
+/* Maintain the gradient overlay on top of slides */
 .pillar-image::after {
     content: '';
     position: absolute;
@@ -185,6 +203,7 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(transparent, rgba(0, 33, 71, 0.8));
+    z-index: 2;
 }
 
 .pillar-content {
@@ -322,7 +341,7 @@
     .falcon-hero {
         min-height: 100vh;
         height: auto;
-        padding-top: 6rem;
+        padding-top: 12rem;
         padding-bottom: 4rem;
         background-attachment: scroll;
         /* Better for mobile performance */

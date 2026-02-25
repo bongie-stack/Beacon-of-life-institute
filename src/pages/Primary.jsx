@@ -7,15 +7,30 @@ import useScrollAnimation from '../hooks/useScrollAnimation';
 
 // Importing assets
 import heroScience from '../assets/main-cover.jpeg';
-import academicImg from '../assets/academic.jpg';
-import campusImg from '../assets/enrollment-poster.jpg';
 import campusLife3 from '../assets/hero_3.jpg';
 import culturalImg from '../assets/cultural.jpeg';
 import premisesImg from '../assets/beac.jpg';
 
+// Pillar Images
+import academicPillarImg from '../assets/academic_pillar.jpg';
+import sport1 from '../assets/sport1.jpg';
+import sport2 from '../assets/sport2.jpg';
+import sport3 from '../assets/sport3.jpg';
+import sport4 from '../assets/sport4.jpg';
+
 export default function Primary() {
     useScrollAnimation();
     const [showScroll, setShowScroll] = useState(false);
+    const [sportIndex, setSportIndex] = useState(0);
+
+    const sportImages = [sport1, sport2, sport3, sport4];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setSportIndex((prev) => (prev + 1) % sportImages.length);
+        }, 4000);
+        return () => clearInterval(interval);
+    }, []);
 
     useEffect(() => {
         const checkScrollTop = () => {
@@ -111,7 +126,9 @@ export default function Primary() {
 
                     <div className="pillars-grid">
                         <div className="pillar-card animate-on-scroll fade-in-up delay-100">
-                            <div className="pillar-image" style={{ backgroundImage: `url(${academicImg})` }}></div>
+                            <div className="pillar-image">
+                                <div className="pillar-slide active" style={{ backgroundImage: `url(${academicPillarImg})` }}></div>
+                            </div>
                             <div className="pillar-content">
                                 <BookOpen className="pillar-icon" />
                                 <h3>Academic</h3>
@@ -121,7 +138,15 @@ export default function Primary() {
                         </div>
 
                         <div className="pillar-card animate-on-scroll fade-in-up delay-200">
-                            <div className="pillar-image" style={{ backgroundImage: `url(${campusImg})` }}></div>
+                            <div className="pillar-image">
+                                {sportImages.map((img, idx) => (
+                                    <div
+                                        key={idx}
+                                        className={`pillar-slide ${idx === sportIndex ? 'active' : ''}`}
+                                        style={{ backgroundImage: `url(${img})` }}
+                                    ></div>
+                                ))}
+                            </div>
                             <div className="pillar-content">
                                 <Trophy className="pillar-icon" />
                                 <h3>Sporting</h3>
@@ -131,7 +156,9 @@ export default function Primary() {
                         </div>
 
                         <div className="pillar-card animate-on-scroll fade-in-up delay-300">
-                            <div className="pillar-image" style={{ backgroundImage: `url(${culturalImg})` }}></div>
+                            <div className="pillar-image">
+                                <div className="pillar-slide active" style={{ backgroundImage: `url(${culturalImg})` }}></div>
+                            </div>
                             <div className="pillar-content">
                                 <Palette className="pillar-icon" />
                                 <h3>Cultural</h3>
