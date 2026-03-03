@@ -87,6 +87,60 @@
     color: var(--color-brand-primary);
 }
 
+.apply-dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.apply-dropdown-container .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.apply-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    min-width: 220px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1001;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.apply-dropdown-container:hover .apply-dropdown-menu,
+.apply-dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.apply-dropdown-menu .dropdown-item {
+    display: flex !important;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    color: var(--color-brand-primary) !important;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+    font-size: 0.9rem !important;
+}
+
+.apply-dropdown-menu .dropdown-item:hover {
+    background: rgba(0, 0, 0, 0.03);
+    color: var(--color-brand-secondary) !important;
+}
+
 @media (max-width: 768px) {
     .mobile-menu-btn {
         display: block;
@@ -109,5 +163,36 @@
     .nav-links.open {
         transform: translateY(0);
         opacity: 1;
+    }
+
+    .apply-dropdown-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apply-dropdown-menu {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        display: none;
+        border: none;
+        width: 100%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.02);
+        margin-top: 0.5rem;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .apply-dropdown-container:hover .apply-dropdown-menu,
+    .apply-dropdown-menu.show {
+        display: block;
+        transform: none;
+    }
+
+    .apply-dropdown-menu .dropdown-item {
+        justify-content: center;
     }
 }
