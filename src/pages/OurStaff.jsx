@@ -1,42 +1,76 @@
 import React from 'react';
 import { User, GraduationCap, Heart, Star } from 'lucide-react';
 import './OurStaff.css';
+import chaplainImg from '../assets/chaplain.jpg';
+import mNcubeImg from '../assets/m_ncube.jpg';
+import xMabhenaImg from '../assets/x_mabhena.jpg';
+import pNdlovuImg from '../assets/p_ndlovu.jpg';
+import bJetiImg from '../assets/b_jeti.jpg';
+import lBhandaImg from '../assets/l_bhanda.jpg';
+import directorImg from '../assets/director.jpg';
+import principalImg from '../assets/principal.jpg';
 
 const staffMembers = [
     {
         name: 'Pastor Sabelo Dube',
         role: 'Director',
-        description: 'Visionary leader dedicated to providing holistic education and nurturing future leaders.',
+        description: (
+            <>
+                MA, MBA, MCLIP. CMgr, Dip Theology.<br /><br />
+                Visionary leader dedicated to providing holistic education and nurturing future leaders.
+            </>
+        ),
         icon: <Star size={40} />,
-        image: null // I will use icons if no images are provided
+        image: directorImg
+    },
+    {
+        name: 'S Ngwabi',
+        role: 'Principal',
+        description: 'Leading our school community with dedication to academic excellence and student well-being.',
+        icon: <GraduationCap size={40} />,
+        image: principalImg
     },
     {
         name: 'Pastor G. Gumpo',
         role: 'Chaplain',
         description: 'Guiding the spiritual growth and moral development of our students and staff.',
         icon: <Heart size={40} />,
-        image: null
+        image: chaplainImg
     },
     {
-        name: 'Mrs. S. Ncube',
-        role: 'Senior Teacher',
-        description: 'Expert in primary education with over 15 years of experience in Cambridge curriculum.',
+        name: 'M Ncube',
+        role: 'ECD Teacher',
+        description: 'Expert in primary education with experience in Cambridge curriculum.',
         icon: <GraduationCap size={40} />,
-        image: null
+        image: mNcubeImg
     },
     {
-        name: 'Mr. L. Sibanda',
-        role: 'Sports Director & Teacher',
-        description: 'Passionate about physical education and developing teamwork skills through sports.',
-        icon: <User size={40} />,
-        image: null
-    },
-    {
-        name: 'Ms. R. Dube',
-        role: 'Arts & Music Teacher',
+        name: 'P Ndlovu',
+        role: 'Grade One teacher',
         description: 'Inspiring creativity and artistic expression in our young learners.',
         icon: <User size={40} />,
-        image: null
+        image: pNdlovuImg
+    },
+    {
+        name: 'B Jeti',
+        role: 'Grade two teacher',
+        description: 'Dedicated to creating an engaging and supportive learning environment for young minds.',
+        icon: <User size={40} />,
+        image: bJetiImg
+    },
+    {
+        name: 'X Mabhena',
+        role: 'Grade 3 Teacher',
+        description: 'Passionate about education and developing teamwork skills in students.',
+        icon: <User size={40} />,
+        image: xMabhenaImg
+    },
+    {
+        name: 'L Bhanda',
+        role: 'Grade Four teacher',
+        description: 'Committed to fostering academic excellence and character development.',
+        icon: <User size={40} />,
+        image: lBhandaImg
     }
 ];
 
