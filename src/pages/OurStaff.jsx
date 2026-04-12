@@ -9,6 +9,8 @@ import bJetiImg from '../assets/b_jeti.jpg';
 import lBhandaImg from '../assets/l_bhanda.jpg';
 import directorImg from '../assets/director.jpg';
 import principalImg from '../assets/principal.jpg';
+import gMakuvazaImg from '../assets/g_makuvaza.jpg';
+import bMoyoImg from '../assets/b_moyo.png';
 
 const staffMembers = [
     {
@@ -60,7 +62,7 @@ const staffMembers = [
     },
     {
         name: 'X Mabhena',
-        role: 'Grade 3 Teacher',
+        role: 'Grade Three Teacher',
         description: 'Passionate about education and developing teamwork skills in students.',
         icon: <User size={40} />,
         image: xMabhenaImg
@@ -71,6 +73,20 @@ const staffMembers = [
         description: 'Committed to fostering academic excellence and character development.',
         icon: <User size={40} />,
         image: lBhandaImg
+    },
+    {
+        name: 'G Makuvaza',
+        role: 'Grade Seven Teacher',
+        description: 'Guiding senior students with experience and dedication to excellence.',
+        icon: <User size={40} />,
+        image: gMakuvazaImg
+    },
+    {
+        name: 'B Moyo',
+        role: 'French Teacher',
+        description: 'Bringing the French language and culture to life in our classrooms.',
+        icon: <User size={40} />,
+        image: bMoyoImg
     }
 ];
 
